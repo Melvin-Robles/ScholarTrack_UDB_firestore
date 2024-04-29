@@ -44,7 +44,7 @@ db.collection("grupos")
 
     querySnapshot.forEach((doc) => {
       let data = doc.data();
-      let divContent = document.createElement("div");
+            let divContent = document.createElement("div");
       divContent.innerHTML = `   
 <div class="card">
   <h5 class="card-header">${data.NOMBRE}</h5>
@@ -66,8 +66,6 @@ db.collection("grupos")
 
     querySnapshot.forEach((doc) => {
       let data = doc.data();
-
-      console.log(data);
 
       let evaluacionesString = Array.isArray(data.EVALUACIONES) ? data.EVALUACIONES.map((evaluacion) => {
 
