@@ -49,7 +49,7 @@ db.collection("grupos")
 <div class="card">
   <h5 class="card-header">${data.NOMBRE}</h5>
   <div class="card-body">
-    <p class="card-text">Codigo: ${data.ESTADO}</p>
+    <p class="card-text">Estado: ${data.ESTADO}</p>
   </div>
 </div>
         `;
