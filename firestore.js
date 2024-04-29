@@ -67,6 +67,8 @@ db.collection("grupos")
     querySnapshot.forEach((doc) => {
       let data = doc.data();
 
+      console.log(data);
+
       let evaluacionesString = Array.isArray(data.EVALUACIONES) ? data.EVALUACIONES.map((evaluacion) => {
 
         return ` ${evaluacion.TIPO}, Puntuación: ${evaluacion.NOTA} -- ${evaluacion.MATERIA} `;
